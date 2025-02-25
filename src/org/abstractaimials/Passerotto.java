@@ -1,6 +1,6 @@
 package org.abstractaimials;
 
-public class Passerotto extends AbstractAnimals {
+public class Passerotto extends AbstractAnimals implements IVolanti {
 
 
     public Passerotto(String nome, int eta){
@@ -17,6 +17,11 @@ public class Passerotto extends AbstractAnimals {
     @Override
     public void mangia(){
         System.out.println("Mangia insetti");
+    }
+
+    @Override
+    public void vola(){
+        System.out.println("Vola");
     }
     
 }

@@ -1,6 +1,6 @@
 package org.abstractaimials;
 
-public class Delfino extends AbstractAnimals{
+public class Delfino extends AbstractAnimals implements INuotanti{
 
     public Delfino(String name, int eta){
         super(name, eta);
@@ -14,6 +14,11 @@ public class Delfino extends AbstractAnimals{
     @Override
     public void mangia(){
         System.out.println("Mangia pesci");
+    }
+
+    @Override
+    public void nuota(){
+        System.out.println("Nuota");
     }
     
 }

@@ -1,6 +1,6 @@
 package org.abstractaimials;
 
-public class Aquila extends AbstractAnimals {
+public class Aquila extends AbstractAnimals implements IVolanti {
 
     
     public Aquila(String nome, int eta){
@@ -17,5 +17,10 @@ public class Aquila extends AbstractAnimals {
     @Override
     public void mangia(){
         System.out.println("Piccoli mammiferi");
+    }
+
+    @Override
+    public void vola(){
+        System.out.println("Vola");
     }
 }
